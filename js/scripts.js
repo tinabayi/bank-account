@@ -34,8 +34,9 @@ $(document).ready(function(event) {
            $("#contacts").text(amountDeposit);
         }
         Contact.prototype.withdraw=function(){
-             return inputtedWithdrawAmount ;
-           $("#deposit-withdraw").text(inputtedWithdrawAmount);
+             var balance= amountDeposit-inputtedWithdrawAmount ;
+        }
+           $("#deposit-withdraw").text(balance);
 
            $("input#deposit").val("");
            $("input#withdraw").val("");
