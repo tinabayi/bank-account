@@ -3,12 +3,81 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>bank account</title>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
-    <script src="js/scripts.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+
+    <script src="js/scripts.js"></script> 
+    <title>bank account</title>
+
 </head>
 <body>
+        <div class="container">
+                <h1>Bank account</h1>
+          
+                <div class="row">
+          
+                  <div class="col-md-6">
+                    <h2>Register new account</h2>
+                    <form id="new-user">
+                      <div class="form-group">
+                        <label for="new-name">Name</label>
+                        <input type="text" class="form-control" id="new-name">
+                      </div>
+                      <div class="form-group">
+                            <label for="id-number">ID Number</label><br>
+                            <input type="text" class="form-control" id="id-number">
+                          </div>
+
+                      <div class="form-group">
+                        <label for="initial-deposit">initial deposit</label><br>
+                        <input type="text" class="form-control" id="initial-deposit">
+                      </div>
+                 <h2>Deposit&Withdraw</h2>
+                      <div id="amount">
+                        <div class="amount">
+                          <div class="form-group">
+                            <label for="deposit-amount">Deposit amount</label>
+                            <input type="text" class="form-control deposit-amount">
+                          </div>
+                          <div class="form-group">
+                            <label for="Withdraw-amount">Withdraw amount</label>
+                            <input type="text" class="form-control Withdraw-amount">
+                          </div>
+                          
+                        </div>
+                      </div>
+          
+                     <button  class="btn btn-primary" id="add-deposit">Deposit</button>
+          
+                      <button type="submit" class="btn">Submit</button>
+                    </form>
+          
+                    <h2>Balance:</h2>
+                    <ul id="contacts">
+          
+                    </ul>
+                  </div>
+          
+                  <div class="col-md-6">
+                    <div id="show-contact">
+                      <h2></h2>
+                      <p>balance after deposit: <span class="first-name"></span></p>
+                      <p>balance after Withdraw: <span class="last-name"></span></p>
+                      <p>balances:</p>
+                      <ul id="addresses">
+          
+                      </ul>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </body>
+          </html>
+          
     
 </body>
 </html>
